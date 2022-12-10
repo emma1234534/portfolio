@@ -1,0 +1,273 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.945);
+    color: #fff;
+
+
+}
+h3{
+    position: absolute;
+    color: white;
+    top: 46%;
+    left: 10%;
+    
+    
+}
+h1{
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 10%;
+    
+    
+}
+#code{
+    font-size: 10px;
+    width: 15px;
+    background-color: #fff;
+}
+h4{
+    position: absolute;
+    color: rgba(240, 15, 15, 0.934);
+    left: 10%;
+    top: 56%;
+}
+.nav{
+    background-color: red;
+}
+.parent{
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    background-size: cover;
+    
+    
+   
+}
+.logo{
+    background: red;
+    color:  white;
+    padding: 6px;
+    width: 150px;
+    text-align: center;
+    height: 20px;
+    border-radius: 4px;
+    
+    flex-wrap: wrap;
+
+}
+li{
+    
+    list-style: none;    
+}
+a{
+    text-decoration: none;
+    color: azure;
+}
+ul{
+    display: flex;
+    gap: 50px;
+    
+
+}
+
+.section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(4.jpg);
+    background-position: center;
+    background-size: cover;
+    animation: animate  linear infinite;
+    
+}
+@keyframes animate{
+   0%,100%{
+       transform: scale(1);
+   } 
+   50%{
+    transform: scale(1.2);
+} 
+    }
+
+span{
+position: absolute;
+    width: 4px;
+    height: 4px;
+    top: 20%;
+    left:initial;
+    right: 15%;
+     border-radius: 50%;
+    background: white;
+    border: 1px solid #fff;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0),
+    0 0 0 8px rgb(255, 225, 255,0.1),
+    0 0 20 #fff;
+    animation: animated 7s linear infinite ;
+    }
+    @keyframes animated{
+        0%{
+            transform: rotate(315deg) translateX(0);
+            opacity: 0.4;
+        }
+        75%{
+            opacity: 0;
+        }
+        100%{
+            transform: rotate(315deg) translateX(-1000px);
+            opacity: 0;
+        }
+    }
+    span::before{
+        content: '';
+        position: absolute;
+        transform: translateY(-50%);
+        top: 0;
+        left: initial;
+        width: 300px;
+        height: 1px;
+        background: linear-gradient(90deg,#fff,transparent);
+    }
+    span:nth-child(1){
+        top: 15%;
+        right: 0;
+        left: initial;
+        animation-duration: 1s;
+        animation-delay: 0;
+        opacity: .1;
+        position: absolute;
+    }
+
+span:nth-child(2){
+    top: 15%;
+    right: 0;
+    left: initial;
+    animation-duration: 3;
+    animation-delay: 0;
+    opacity: .1;
+    position: absolute;
+}
+
+span:nth-child(3){
+    top: 15%;
+    right: 30%;
+    left: initial;
+    animation-duration: 2s;
+    animation-delay: 0;
+    opacity: .1;
+    position: absolute;
+}
+
+span:nth-child(4){
+top: 10%;
+right: 0;
+left: initial;
+animation-duration: 1.5s;
+animation-delay: 0;
+opacity: .1;
+position: absolute;
+}
+span:nth-child(5){
+    top: 15%;
+    right: 40%;
+    left: initial;
+    animation-duration: 3.5s;
+    animation-delay: 0;
+    opacity: .1;
+    position: absolute;
+}
+
+span:nth-child(6){
+    top: 15%;
+    right: 30%;
+    left: initial;
+    animation-duration: 4s;
+    animation-delay: 0;
+    opacity: .1;
+    position: absolute;
+}
+
+span:nth-child(7){
+top: 15%;
+right: 5%;
+left: initial;
+animation-duration: 3.5s;
+animation-delay: 0;
+opacity: .1;
+position: absolute;
+}
+
+
+#about{
+    padding: 80px ;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+    
+   
+
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.tab-title{
+font-size: 60px;
+font-family: 600;
+color: #fff;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 4px;
+}
+.tab-links{
+    margin-left: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+list-style: none;
+margin: 10px 0;
+}
+.tab-contents{
+    display: ;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+        
+        

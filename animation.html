@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="animation.css">
+    <title>Animation</title>
+</head>
+<body>
+    <nav class="bar">
+        <div class="parent">
+            <div class="logo">
+                BEROSS Portfolio
+            </div>
+            <div class="info">
+                <ul>
+                    <li>
+                
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/">About</a>
+                    </li>
+                    <li>
+                        <a href="/">Service</a>
+                    </li>
+                    <li>
+                        <a href="/">Skill</a>
+                    </li>
+                    <li>
+                        <a href="/">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="section">
+        <h3>Hello! Guys, I am</h3>
+        <h1>Emmanuel William</h1>
+        <h4> <img id="code" src="5.jpg" alt=""> Programmer. <img id="code" src="6.jpg" alt=""> Web Developer </h4>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="1.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h2 class="sub-title">About me</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur 
+                        adipisicing elit. Aliquam dolorum 
+                        provident quia laborum illo maxime quas
+                         eaque exercitationem nostrum quaerat at 
+                         beatae quasi dolor delectus placeat,
+                         fugiat corrupti quisquam culpa.</p>
+
+<div class="tab-titles">
+    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+    <p class="tab-links"  onclick="opentab('Experience')">Experience</p>
+    <p class="tab-links"  onclick="opentab('Education')">Education</p>
+</div>
+<div class="tab-contents active-tab" id="Skills">
+    <ul>
+        <li> UI/UX <br> Designing web interface</li>
+        <li>UI/UX <br> Designing web interface</li>
+        <li> UI/UX<br> Designing web interface</li>
+    </ul>
+</div>
+
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li> UI/UX <br> Designing web interface</li>
+                        <li>UI/UX <br> Designing web interface</li>
+                        <li> UI/UX<br> Designing web interface</li>
+                    </ul>
+                </div>
+                
+                                </div>
+                                <div class="tab-contents" id="Education">
+                                    <ul>
+                                        <li> 1993 <br> Designing web interface</li>
+                                        <li>6156 <br> Designing web interface</li>
+                                        <li> 42524<br> Designing web interface</li>
+                                    </ul>
+                                </div>
+                                
+                                                </div>
+            </div>
+        </div>
+     
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classlist.remove('active-link');
+            }
+            for(tabcontent of tabcontents){
+                tabcontents.classlist.remove('active-tab');
+            }
+
+        }
+    </script>
+    
+</body>
+</html>
