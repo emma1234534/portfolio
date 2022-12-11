@@ -53,7 +53,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="1.jpg" alt="">
+                    <img src="1.jpg">
                 </div>
                 <div class="about-col-2">
                     <h2 class="sub-title">About me</h2>
@@ -77,42 +77,61 @@
     </ul>
 </div>
 
-                </div>
+                
                 <div class="tab-contents" id="Experience">
                     <ul>
-                        <li> UI/UX <br> Designing web interface</li>
-                        <li>UI/UX <br> Designing web interface</li>
-                        <li> UI/UX<br> Designing web interface</li>
+                        <li> ueue <br> Designing web interface</li>
+                        <li>kjwjw<br> Designing web interface</li>
+                        <li> kqhjwhwj<br> Designing web interface</li>
                     </ul>
-                </div>
                 
-                                </div>
+                
+                                
                                 <div class="tab-contents" id="Education">
                                     <ul>
                                         <li> 1993 <br> Designing web interface</li>
                                         <li>6156 <br> Designing web interface</li>
                                         <li> 42524<br> Designing web interface</li>
                                     </ul>
-                                </div>
+                                
                                 
                                                 </div>
             </div>
         </div>
      
     </div>
+<!----------------services--------------->
+<div id="services">
+    <div class="container">
+        <h2 class="sub=title">My services</h2>
+        <div class="services-list">
+            <div>
+                <h2>web Designing</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Aperiam possimus,
+                     omnis sapiente quibusdam adipisci labore accusantium 
+                     culpa asperiores
+                      nemo quae architecto, fugiat sint.
+                     Impedit voluptate ducimus numquam placeat delen</p>
+                     <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
 
     <script>
-        var tablinks = document.getElementsByClassName('tab-links');
-        var tabcontents = document.getElementsByClassName('tab-contents');
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
 
         function opentab(tabname){
             for(tablink of tablinks){
-                tablink.classlist.remove('active-link');
+                tablink.classList.remove("active-link");
             }
             for(tabcontent of tabcontents){
-                tabcontents.classlist.remove('active-tab');
+                tabcontent.classList.remove("active-tab");
             }
-
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
         }
     </script>
     
