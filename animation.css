@@ -48,10 +48,7 @@ h4{
     
     
 }
-.info{ 
-    
 
-}
 .parent{
     display: flex;
     justify-content: space-between;
@@ -317,4 +314,17 @@ display: none;
  }
  .titlework{
      font-size: 50px;
+ }
+
+ .favour{ display: block;
+    
+ }
+ .parent-favour{
+    display: flex;
+ }
+ .parent-favour div img{
+    width: 40px
+ }
+ .learnerfavour{
+    display: flex;
  }
