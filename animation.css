@@ -40,44 +40,33 @@ h4{
     left: 42%;
 }
 .bar{
-    background-color: red;
-    margin-bottom: 2px;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(35, 32, 32);
+    z-index: 1;
+    
+    
+    
+}
+.info{ 
+    
 
 }
 .parent{
-    
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px 10px 20px;
-    background-color: rgb(0, 0, 0);
-    background-size: cover;
-    
-    
-   
+    padding: 8px 75px;
 }
-.info{
-    font-size: medium;
-    font-family: serif;
-}
-.logo{
- background-color: #ff004f;   
-border-radius: 6px;
+.info ul li {
+    display: inline-block;
+    margin: 0px 20px;
+   }
 
-}
-li{
-    
-    list-style: none;    
-}
-a{
+.info ul li a{
     text-decoration: none;
-    color: azure;
+color: #d6d1d1;
 }
-ul{
-    display: flex;
-    gap: 28px;
-    
 
-}
 
 .section{
     position: relative;
@@ -90,6 +79,7 @@ ul{
     position: fixed;
     z-index: -5;
     opacity: .5;
+    top: 0;
     
 }
 @keyframes animate{
@@ -307,6 +297,8 @@ display: none;
  }.My-work img{
     width: 100%;
     border-radius: 15px;
+    border: 1px solid gray;
+    opacity: .7;
     
       
  }
