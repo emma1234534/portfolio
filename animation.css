@@ -14,54 +14,54 @@ body{
 h3{
     position: absolute;
     color: white;
-    top: 46%;
-    left: 10%;
+    top: 15%;
+    left: 44%;
+    
     
     
 }
 h1{
     position: absolute;
-    color: white;
-    top: 50%;
-    left: 10%;
-    
-    
+    color: #fff;
+    top: 30%;
+    left: 44%;
+    font-size:20px;
 }
 #code{
     font-size: 10px;
-    width: 15px;
+    border-radius: 10px;
+    width: 20px;
     background-color: #fff;
 }
 h4{
     position: absolute;
     color: rgba(240, 15, 15, 0.934);
-    left: 10%;
-    top: 56%;
+    top: 30%;
+    left: 42%;
 }
-.nav{
+.bar{
     background-color: red;
+    margin-bottom: 2px;
+
 }
 .parent{
     
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 10px 20px 10px 20px;
     background-color: rgb(0, 0, 0);
     background-size: cover;
     
     
    
 }
+.info{
+    font-size: medium;
+    font-family: serif;
+}
 .logo{
-    background: red;
-    color:  white;
-    padding: 6px;
-    width: 150px;
-    text-align: center;
-    height: 20px;
-    border-radius: 4px;
-    
-    flex-wrap: wrap;
+ background-color: #ff004f;   
+border-radius: 6px;
 
 }
 li{
@@ -74,7 +74,7 @@ a{
 }
 ul{
     display: flex;
-    gap: 50px;
+    gap: 28px;
     
 
 }
@@ -86,7 +86,10 @@ ul{
     background: url(4.jpg);
     background-position: center;
     background-size: cover;
-    animation: animate  linear infinite;
+    animation: animate 50s linear infinite;
+    position: fixed;
+    z-index: -5;
+    opacity: .5;
     
 }
 @keyframes animate{
@@ -207,13 +210,16 @@ position: absolute;
 
 
 #about{
-    padding: 80px ;
-    color: #ababab;
+    padding: 300px 80px 0 80px;
+    color: #d6d1d1;
+    
+    
 }
 .row{
     display: flex;
     justify-content:space-between;
     flex-wrap: wrap;
+    
 }
 
 .about-col-1{
@@ -225,6 +231,7 @@ position: absolute;
 .about-col-1 img{
     width: 100%;
     border-radius: 15px;
+    opacity: .6;
 }
 .about-col-2{
     flex-basis: 60%;
@@ -279,4 +286,30 @@ display: none;
      grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
      grid-gap:40px;
      margin-top: 50px;
- }       
+     
+ } 
+ .services-list div{
+     border: 1px solid grey;
+     padding: 20px;
+     border-radius: 10px;
+     background-color: #d6d1d121;
+     
+ } 
+ 
+
+
+ .My-work{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap:40px;
+    margin-top: 50px;
+    
+ }.My-work img{
+    width: 100%;
+    border-radius: 15px;
+    
+      
+ }
+ .titlework{
+     font-size: 50px;
+ }
