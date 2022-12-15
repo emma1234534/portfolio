@@ -317,20 +317,59 @@ display: none;
  }
 
  .favour{ display: block;
+    border: 1px solid gray;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
     
  }
+ .favour p{
+    font-size: 20px;
+ }
+ 
  .parent-favour{
     display: block;
+    
  }
  .parent-favour div img{
-    width: 40px
+    width: 40px;
+    
  }
  .learnerfavour{
     display: flex;
     justify-content: space-around;
+   
 
 
  }
  .myfavour{
     margin-left: 40%;
+   
  }
+ .myfavour img{
+    border-radius: 50%;
+     width: 200px;
+      height: 200px;
+      border: 1px solid gray;
+ }
+ 
+#img{
+    margin-left: 25%;
+    
+}
+
+.info-contact div{
+    display: flex;
+}
+#imageslog{
+    width: 40px;
+    padding: 25px;
+}
+#imageslo{
+    width: 20px;
+    padding: 10px;
+    padding-left: 10px;
+}
+#commun{
+    padding-top: 35px; 
+}
