@@ -42,8 +42,9 @@ h4{
 .bar{
     position: fixed;
     width: 100%;
-    background-color: rgb(35, 32, 32);
+    
     z-index: 1;
+    background-color: rgb(30, 23, 23);
     
     
     
@@ -218,7 +219,9 @@ position: absolute;
 .about-col-1 img{
     width: 100%;
     border-radius: 15px;
+    border: 1px solid white;
     opacity: .6;
+    box-shadow:  0px 0px 0px 0.5px rgba(10, 10, 10, 0.819), 0px 0px 0px 1px rgba(15, 14, 14, 0.135), 0px 0px 10px rgba(255, 0, 0, 0.637);
 }
 .about-col-2{
     flex-basis: 60%;
@@ -292,8 +295,8 @@ display: none;
      border: 1px solid grey;
      padding: 20px;
      border-radius: 10px;
-     background-color: #d6d1d121;
-     
+     background-color: rgba(30, 23, 23, 0.819);
+     box-shadow:  0px 0px 0px 0.5px rgba(10, 10, 10, 0.819), 0px 0px 0px 1px rgba(15, 14, 14, 0.135), 0px 0px 10px rgba(255, 0, 0, 0.637);
  } 
  
 
@@ -309,6 +312,7 @@ display: none;
     border-radius: 15px;
     border: 1px solid gray;
     opacity: .7;
+    box-shadow:  0px 0px 0px 0.5px rgba(10, 10, 10, 0.819), 0px 0px 0px 1px rgba(15, 14, 14, 0.135), 0px 0px 10px rgba(255, 0, 0, 0.637);
     
       
  }
@@ -317,11 +321,11 @@ display: none;
  }
 
  .favour{ display: block;
-    border: 1px solid gray;
+    box-shadow:  0px 0px 0px 0.5px rgba(10, 10, 10, 0.819), 0px 0px 0px 1px rgba(15, 14, 14, 0.135), 0px 0px 10px rgba(255, 0, 0, 0.637);
     padding: 20px;
     border-radius: 10px;
     margin: 10px;
-    
+    background-color: rgba(30, 23, 23, 0.819);
  }
  .favour p{
     font-size: 20px;
@@ -351,6 +355,7 @@ display: none;
      width: 200px;
       height: 200px;
       border: 1px solid gray;
+      box-shadow:  0px 0px 0px 0.5px rgba(10, 10, 10, 0.819), 0px 0px 0px 1px rgba(15, 14, 14, 0.135), 0px 0px 10px rgba(255, 0, 0, 0.637);
  }
  
 #img{
@@ -363,6 +368,15 @@ display: none;
     
     
 }
+.portlogo{
+    padding-top: 14%;
+}
+#bigb{
+    color: red;
+    font-size: 60px;
+    font-weight: bold;
+
+}
 .contactform{
 border: 1px solid rgb(7, 6, 6);
 border-radius: 10px;
@@ -372,62 +386,31 @@ margin-top: 15%;
 margin-bottom: 50px;
 border: 1px solid gray;
 }
-.contactform div ul li {
-    list-style: none;
-   }
-#woo{
-    width: 60vh;
-    height: 5vh;
-    background: none;
-    border: 1px solid;
-    margin: 2px;
-    border-radius: 4px;
-    color: #fff;
-}
-#woo2{
-    width: 60vh;
-    padding-bottom: 45%;
-    background: none;
-    background: none;
-    border: 1px solid;
-    margin: 2px;
-    border-radius: 4px;
-    color: #fff;
-    
-}
-#woo3{
-    margin: 2px;
-    
-    background-color: gray;
-    border: 1px solid;
-    border-radius: 4px;
-    color: #fff;
-    
-}
 
 .info-contact {
     margin-top: 13%;
-    margin-bottom: 50px;
+
 }
 .info-contact div{
     display: flex;
 }
 #imageslog{
-    width: 40px;
-    padding: 25px;
+    width: 30px;
+    padding: 8px;
+    
 }
 #imageslo{
     width: 20px;
-    padding: 10px;
-    padding-left: 10px;
+    padding-top: 4%;
+    padding-left: px;
 }
 #commun{
-    padding-top: 35px; 
+    padding-top: 16px; 
 }
 .infome{
     font-size: 30px;
     font-weight: bold;
-    padding: 30px;
+    padding: 8px;
 }
 .form{
     display: block;
@@ -469,4 +452,14 @@ textarea{
     color: #fff;
     background-color: rgb(29, 1, 1);
 
+}
+.copyright{
+    text-align: center;
+    padding: 20px;
+}
+hr{
+    border: 0.1px solid gray;
+    
+    background-color: #fff;
+    
 }
